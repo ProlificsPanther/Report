@@ -1,0 +1,40 @@
+<html>
+{{include:Header.html}}
+<head>
+<title>Pay Orders</title>
+<link rel="icon" href="gscookies.ico">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+{{form:tag}}
+{{form:info}}
+{{form:script}}
+<!-- {{form:messages}} -->
+
+	<div id="header">
+		<h1 id="title">Sample Order Data</h1>
+	</div>
+
+	 <div id="payorders-form">
+	 
+		<table id="payorder_data_table" class="table table-striped table-hover table-bordered dataTables dt-responsive"></table>
+			
+			<div align="center">
+				{{emit:submit}}
+			</div>
+	
+	</div>
+	
+	<div id="footer">
+		<p> Copyright © 2018 <a href="https://www.prolifics.com">Prolifics</a> All Rights Reserved.</p>
+	</div>
+</body>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="pyordr.js"></script>
+	{{include:Footer.html}}
+</html>

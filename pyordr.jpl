@@ -1,0 +1,10 @@
+proc orderdetailspay
+{
+dbms sql select * from payoders order by serialnumber
+}
+
+proc pdf
+{
+runreport "myrep" driver=pdf overwrite output="demo.pdf"   landscape \
+topmargin="5mm" bottommargin="5mm" leftmargin="10mm" rightmargin="5mm"
+}

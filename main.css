@@ -1,0 +1,560 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
+	display: block;
+}
+
+html {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+.serif{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:18px;
+	font-weight:bold;
+}
+#serif{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:10px;
+	font-weight:bold;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+	height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.page {
+	overflow: hidden;
+	margin: 36px auto;
+	width: 90%;
+}
+
+h2 {
+	font: 600 24px "Futura";
+}
+
+p {
+	font: 16px "Arial", "Helvetica", sans-serif;
+}
+
+h1#title {
+margin: 5px;
+	font: italic small-caps 600 36px/1.5em "Futura";
+	text-align: center;
+}
+
+
+
+div #main {
+	position: relative;
+	float: right;
+	width: 58%;
+	margin: 5px;
+	margin-right:80px !important;/* Customized from 80 px;*/
+	padding: 5px;
+	height: 100%;
+}
+
+div#right {
+	position: relative;
+	float: right;
+	width: 15%;
+	margin: 5px;
+	border: thin solid;
+	padding: 5px;
+}
+
+div#header {
+	top: 0px;
+	left: 0px;
+	height: 55px;
+	margin: 0px;
+	border: thin solid;
+	padding: 0px;
+	background-color:darkturquoise;###4787CE;
+	color:#fff;
+}
+
+div#footer {
+	clear: both;
+	margin: 0px;
+	border: thin solid;
+	bottom: 0px;
+	right: 0;
+	left: 0;
+	padding: 1rem;
+	background-color:darkturquoise;###4787CE;
+	text-align: center;
+        position:fixed;
+	color:#fff;
+}
+
+.logout-btn {
+	margin-top:-42px;margin-right:10px;
+	float:right;
+}
+
+p.help-text, label .help-text {
+	font-size:13px;font-weight:bold;margin-top:10px;
+}
+
+.no-display {
+	display:none;
+}
+
+
+/* login page css start */
+
+#login-page {
+    padding: 20px;
+    background-color: white;
+    margin: auto;
+    //margin-top: 100px;
+    width: 500px; /*Customized from 400px*/
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 8px 5px rgba(0, 0, 0, .4);
+    min-height: 100px;
+}
+.login-form {
+    max-width:400px;
+    margin:15px auto;
+    background:#fff;
+    border-radius:2px;
+    padding:20px;
+    font-family: Georgia, "Calibri", Times, serif;
+}
+.login-form h1{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 20px 0px;
+    color: #5C5C5C;
+    font-size:x-large;
+}
+.login-form ul{
+    list-style:none;
+    padding:0;
+    margin:0;  
+}
+.login-form li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+.login-form li:last-child{
+    border:none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.login-form li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-form input[type="text"],
+.login-form input[type="date"],
+.login-form input[type="datetime"],
+.login-form input[type="email"],
+.login-form input[type="number"],
+.login-form input[type="search"],
+.login-form input[type="time"],
+.login-form input[type="url"],
+.login-form input[type="password"],
+.login-form textarea,
+.login-form select
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.login-form input[type="text"]:focus,
+.login-form input[type="date"]:focus,
+.login-form input[type="datetime"]:focus,
+.login-form input[type="email"]:focus,
+.login-form input[type="number"]:focus,
+.login-form input[type="search"]:focus,
+.login-form input[type="time"]:focus,
+.login-form input[type="url"]:focus,
+.login-form input[type="password"]:focus,
+.login-form textarea:focus,
+.login-form select:focus
+{
+}
+.login-form input[type=submit],
+.login-form input[type=button]  {
+	
+ width:100px;line-height:26px;
+}
+
+.login-form li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.login-form textarea{
+    resize:none;
+}
+
+
+#login-outer
+{
+    width:100%;
+    text-align: center;
+}
+.login-inner
+{
+    display: inline-block;margin:1px;
+}
+
+/* login page css end */
+
+/* option page css start */
+.label {
+	font-weight:bold;
+}
+
+#os_deleteScoutDialog label,#vo_updateOrderDialog label {
+    	font:bold 0.9em/2 sans-serif;
+}
+#os_deleteScout {
+    	padding:15px;
+    	width:250px;
+}
+
+#view-1234{
+	
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	 border-bottom: 2px solid #ddd;
+	margin-top:10px;
+}
+/* option screen css end */
+
+/* vieworder css start*/
+
+.view-order-btn input[type=submit],
+.view-order-btn input[type=button]
+ {
+	width:100px;line-height:26px;
+}
+.view-order-table {
+	height:450px;
+	overflow-y:scroll;
+}
+
+.view-order-table div input[name="i_1_paidstatus"] {
+	display:none;
+} 
+
+.view-order-table input[type=text] {
+	width: 100%;
+    	padding: 3px 5px;
+    	margin: 3px 0;
+    	display: inline-block;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	box-sizing: border-box;
+}
+
+select {
+	height:28px;width:100%;
+}
+
+
+#vieworders-form {
+    	background-color: #f2f2f2;
+	padding: 10px;
+	position:fixed;
+    	left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+	padding-left:15px;
+	padding-right:15px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+    	border-radius: 10px;
+    	box-shadow:  0px 0px 8px 5px rgba(0, 0, 0, .4);
+	height:780px;
+	width:660px;
+}
+#view-1
+{
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	margin-top:10px;	
+}
+#view-123
+{
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	 margin-top:9px;	
+}
+
+#vo_addOrderDialog label,#vo_updateOrderDialog label {
+    	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	
+}
+#vo_addOrderDialog input[type='text'] {
+    	width:100px;
+}
+#vo_addOrderDialog textarea, #vo_updateOrderDialog textarea {
+    	width:245px;
+}
+#vo_addOrderDialog fieldset, #vo_updateOrderDialog fieldset {
+    	padding:15px;
+}
+
+/* vieworder css end */ 
+
+/* payorder css start */
+.payorder-btn input[type=submit],
+.payorder-btn input[type=button]  {
+	
+ width:100px;line-height:26px;
+}
+#payorders-form input[type=text] {
+	width: 100%;
+    	padding: 3px 5px;
+    	margin: 3px 0;
+    	display: inline-block;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	box-sizing: border-box;
+}
+#payorders-form {
+    	background-color: lightsteelblue;
+    	padding: 10px;
+	position:fixed;
+    	left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+	padding-left:15px;
+	padding-right:15px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+    	border-radius: 10px;
+    	box-shadow:  0px 0px 8px 5px rgba(0, 0, 0, .4);
+	height:780px;
+	width:660px;
+}
+select {
+	height:28px;width:100%;
+}
+.po-label-title {
+	font-size: 150%;
+	font-weight:bold;
+}
+.label-total-box {
+	display:block;padding:5px;
+}
+th {
+    background-color: #4787CE;
+    color: #fff;font-size:90% !important;
+    font-weight:bold !important;
+}
+table, th, td {
+   border: 3px solid #778899;
+}
+table tr td input {
+   font-weight:bold;text-align: center;
+}
+
+.box
+{
+    width: 190px;
+    height: 30px;
+    margin-top:5px;
+    border: 2px solid #0F6FA1;
+  }
+.payorder-table {
+	height:450px;
+	overflow-y:scroll;
+}
+#payOrderDialog label {
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+#payOrderDialog input[type='text'] {
+	width:100px;
+}
+#payOrderDialog textarea {
+	width:245px;
+}
+#payOrderDialog fieldset{
+ 	padding:15px;
+}
+#view-12{
+	
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	margin-top:10px;
+}
+/*payorder css end */
+
+/* totalview css start */
+
+.total-sales-btn input[type=submit],
+.total-sales-btn input[type=button] {
+	width:100px;line-height:26px;
+}
+
+div troopsales_data_table {
+	height:450px;
+	overflow-y:scroll;
+}
+
+.troopsales-form {
+    	background-color: lightsteelblue;
+	padding: 10px;
+	position:fixed;
+    	left: 50%;
+    	top: 50%;
+    	transform: translate(-50%, -50%);
+	padding-left:15px;
+	padding-right:15px;
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+    	border-radius: 10px;
+    	box-shadow:  0px 0px 8px 5px rgba(0, 0, 0, .4);
+	height:780px;
+	width:770px;
+}
+#view-2
+{
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;	
+}
+/* totalview css end */
+
+/* register scout css start */
+
+.troop-reg  {
+	padding:10px;width:350px;
+}
+.troop-reg .input-field:focus,
+.troop-reg .select-field:focus{
+    border: 1px solid #0C0;
+}
+
+.troop-reg input[type=submit],
+.troop-reg input[type=button],.reg-scout input[type=submit],
+.reg-scout input[type=button]{
+	width:100px;line-height:26px;
+}
+
+.troop-reg input[type=text], .troop-reg input[type=password] {
+	width:158px;line-height: 22px;
+}
+.reg-form-heading {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:10px;
+}
+.reg-form-heading1 {
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:14px;
+}
+.reg-form{
+	margin-bottom: 20px;
+    padding-bottom: 3px;
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:10px;
+}
+
+/*Scout registration code*/
+.reg-scout  {
+	padding:10px;width:350px;
+}
+.reg-scout .input-field:focus,
+.reg-scout .select-field:focus{
+    border: 1px solid #0C0;
+}
+
+.reg-scout input[type=text], .reg-scout input[type=password] {
+	width:320px;line-height: 22px;
+}
+
+#register-form {
+    padding-left: 20px;
+    background-color: lightsteelblue;
+    margin: auto;
+    width: 380px; /*Customized from 400px*/
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow:  0px 0px 8px 5px rgba(0, 0, 0, .4);
+    //min-height: 100px;
+	height:auto;
+}
+
+/* register scout css end */
