@@ -1,9 +1,9 @@
 # Report-Writer
-This repo is for the demo of integration of PDF Reports generation with Panther
+This repository contains  sample source on how to create a PDF Report Writer. 
 
 # Pre-Requisite:
   * Panther Servlet/Apache
-  * ini file for the app
+  * Panther ini file for the Panther application
 
 # This repo consists of the following files:
   * main.css
@@ -12,21 +12,21 @@ This repo is for the demo of integration of PDF Reports generation with Panther
   * pyordr.js
   * cookiedbreport.lib
   * bootstrap_headers.zip
-  * cookie
+  * cookie JDB database
   
 # cookiedbreport.lib
-This is the library that contains the Panther client screen that has grids loaded on it and pyordr.html attached as the HTML template.
+This is the library that contains the Panther client screen  <ADD NAME HERE> containing grids . Pyordr.html  is attached as the HTML template.
 
 # Pyordr.jpl
-This is the jpl code that we have separated out from the back of the screen of Panther and kept in a separate file keeping a "include" tag in the section where JPL Procedures are defined in Property Window of the screen.
+ This jpl is included in the screen  <ADD NAME HERE>  . This screen contains the JPL  that creates the PDF report.  
 
 # Pyordr.html
-This is the HTML template that is attached in the JAM screen so as to generate a user-defined UI for the screen. main.css and pyordr.js are attached to HTML template. This has a Generate PDF button which will be visible on the UI and it will generate the Report in PDF format.
+This is the HTML template that is attached in the JAM screen to generate a user-defined UI for the screen. Main.css and pyordr.js are attached to HTML template. The Generate PDF button which will be visible on the UI and it will generate the Report in PDF format.
 
 # bootstrap_headers
-This is a zip file, please unzip it and point it into SMPATH of your ini file so that jserver has no issues with checking the contents of this folder. This folder contains multiple bootstrap JS and CSS files which are being called in a file called Header.html and Footer.html. These two files are being called in pyordr.html which will load the datatables on the browser.
+This is a zip file, please unzip it and  have SMPATH  point to it (via Panther ini file) .  This folder contains multiple bootstrap javascript and CSS files which are being loaded from  Header.html and Footer.html. These two files are being  iloaded in pyordr.html which will load the datatables on the browser.
 
 # cookie
-This is the database that will help you populate Panther Grids/Datatables.
+This is the JDB database containing  used to  populate Panther Grids/Datatables.
 
 For further queries: support@prolifics.com
