@@ -15,10 +15,10 @@ This repository contains  sample source on how to create a PDF Report Writer.
   * cookie JDB database
   
 # cookiedbreport.lib
-This is the library that contains the Panther client screen  <ADD NAME HERE> containing grids . Pyordr.html  is attached as the HTML template.
+This is the library that contains the Panther client screen pyordr containing grids . Pyordr.html  is attached as the HTML template.
 
 # Pyordr.jpl
- This jpl is included in the screen  <ADD NAME HERE>  . This screen contains the JPL  that creates the PDF report.  
+ This jpl is included in the screen pyordr. This screen contains the JPL  that creates the PDF report.  
 
 # Pyordr.html
 This is the HTML template that is attached in the JAM screen to generate a user-defined UI for the screen. Main.css and pyordr.js are attached to HTML template. The Generate PDF button which will be visible on the UI and it will generate the Report in PDF format.
@@ -28,5 +28,7 @@ This is a zip file, please unzip it and  have SMPATH  point to it (via Panther i
 
 # cookie
 This is the JDB database containing  used to  populate Panther Grids/Datatables.
+
+Video Tutorial: https://youtu.be/qk_K2Jd9Aco
 
 For further queries: support@prolifics.com
