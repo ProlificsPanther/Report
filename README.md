@@ -31,6 +31,6 @@ JDB database containing data used to populate Panther Grids/Datatables.
 
 Video Tutorial: https://youtu.be/qk_K2Jd9Aco
 
-Need a Panther Web 551 Redhat Image? [Click Here](https://hub.docker.com/r/prolificspanther/panther/)
+Need a Panther Web 551 Redhat Image? [Click Here](https://hub.docker.com/r/prolificspanther)
 
 Contact support@prolifics.com for a 45 day license included.
