@@ -1,9 +1,10 @@
-# Report-Writer
+# ReportWriter
 This repository contains  sample source on how to create a PDF file from your Panther Report Writer. 
 
-# Pre-Requisite:
+# Prerequisite:
   * Panther Servlet/Apache
   * Panther ini file for the Panther Web application
+  * Panther 5.5*
 
 # This repo consists of the following files:
   * main.css
@@ -30,7 +31,8 @@ Please unzip the file and  have SMPATH  point to it (via Panther ini file) .  Th
 JDB database containing data used to populate Panther Grids/Datatables.
 
 Video Tutorial: https://youtu.be/qk_K2Jd9Aco
-
 Need a Panther Web 551 Redhat Image? [Click Here](https://hub.docker.com/r/prolificspanther)
 
-Contact support@prolifics.com for a 45 day license included.
+Contact support@prolifics.com for a 45 day license.
+
+How to setup a Panther Servlet Web Application? [Click Here](https://github.com/ProlificsPanther/PantherWeb/releases)
