@@ -27,7 +27,7 @@ This is the HTML template that is attached to the JAM screen to generate a user-
 # bootstrap_headers
 Please unzip the file and  have SMPATH  point to it (via Panther ini file) .  This folder contains multiple bootstrap javascript and CSS files which are loaded from Header.html and Footer.html. These two files are referenced in pyordr.html which are load the datatables.
 
-# cookie
+# cookie db
 JDB database containing data used to populate Panther Grids/Datatables.
 
 Video Tutorial: https://youtu.be/qk_K2Jd9Aco
