@@ -31,6 +31,7 @@ Please unzip the file and  have SMPATH  point to it (via Panther ini file) .  Th
 JDB database containing data used to populate Panther Grids/Datatables.
 
 Video Tutorial: https://youtu.be/qk_K2Jd9Aco
+
 Need a Panther Web 552 Redhat Image? [Click Here](https://hub.docker.com/r/prolificspanther/pantherweb)
 
 [Click Here](https://www.prolifics.com/panther-trial-license-request) for a 45 day license.
