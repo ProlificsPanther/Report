@@ -15,7 +15,7 @@ This repository contains  sample source on how to create a PDF file from your Pa
   * bootstrap_headers.zip
   * cookie JDB database
   
-# cookiedbreport.lib
+# Cookiedbreport.lib
 This is the library that contains the Panther client screen pyordr which contains grids . Pyordr.html  is attached as the HTML template.
 
 # Pyordr.jpl
