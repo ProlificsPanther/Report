@@ -1,5 +1,5 @@
 # ReportWriter
-This repository contains  sample source on how to create a PDF file from your Panther Report Writer. 
+Generate a Panther  Web Report in PDF format
 
 # Prerequisite:
   * Panther Servlet/Apache
@@ -16,16 +16,16 @@ This repository contains  sample source on how to create a PDF file from your Pa
   * cookie JDB database
   
 # Cookiedbreport.lib
-This is the library that contains the Panther client screen pyordr which contains grids . Pyordr.html  is attached as the HTML template.
+Panther client screen pyordr containing grid. Pyordr.html  is attached as the HTML template.
 
 # Pyordr.jpl
- This jpl is included in the screen pyordr. This screen contains the JPL  that creates the PDF report.  
+ JPL included in screen pyordr. This screen contains the JPL  that creates the PDF report.  
 
 # Pyordr.html
-This is the HTML template that is attached to the JAM screen to generate a user-defined UI for the screen. Main.css and pyordr.js are also attached to HTML template. The Generate PDF button which is visible will generate the Report in PDF format when clicked on.
+HTML template attached to the JAM screen generates the UI for the screen. Main.css and pyordr.js are also attached to the HTML template. The "Generate PDF" button which is visible will generate the Report in PDF format when clicked on.
 
 # Bootstrap_headers
-Please unzip the file and  have SMPATH  point to it (via Panther ini file) .  This folder contains multiple bootstrap javascript and CSS files which are loaded from Header.html and Footer.html. These two files are referenced in pyordr.html which are load the datatables.
+Please unzip the file and set SMPATH to point to it (via Panther ini file) .  This folder contains multiple Bootstrap Javascript and CSS files which are loaded from Header.html and Footer.html. These two files are referenced in pyordr.html which load the datatables.
 
 # Database : cookie_db
 JDB database containing data used to populate Panther Grids/Datatables.
@@ -34,8 +34,6 @@ JDB database containing data used to populate Panther Grids/Datatables.
 Video Tutorial: https://youtu.be/qk_K2Jd9Aco
 
 Need a Panther Web 552 Redhat Image? [Click Here](https://hub.docker.com/r/prolificspanther/pantherweb "Named link title") 
-
-[Click Here](https://prolifics.com/panther-trial-license-request/ "Named link title") for a 45-day license.
 
 How to set up a Panther Servlet Web Application? [Click Here](https://github.com/ProlificsPanther/PantherWeb/releases "Named link title")
 
