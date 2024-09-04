@@ -1,5 +1,5 @@
 # ReportWriter
-Generate a Panther  Web Report in PDF format
+Generate a Panther Web Report in a PDF format.
 
 # Prerequisite:
   * Panther Servlet/Apache
@@ -25,7 +25,7 @@ Panther client screen pyordr containing grid. Pyordr.html  is attached as the HT
 HTML template attached to the JAM screen generates the UI for the screen. Main.css and pyordr.js are also attached to the HTML template. The "Generate PDF" button which is visible will generate the Report in PDF format when clicked on.
 
 # Bootstrap_headers
-Please unzip the file and set SMPATH to point to it (via Panther ini file) .  This folder contains multiple Bootstrap Javascript and CSS files which are loaded from Header.html and Footer.html. These two files are referenced in pyordr.html which load the datatables.
+Please unzip the file and set SMPATH to point to it (via Panther ini file). This folder contains multiple Bootstrap Javascript and CSS files which are loaded from Header.html and Footer.html. These two files are referenced in pyordr.html which load the datatables.
 
 # Database : cookie_db
 JDB database containing data used to populate Panther Grids/Datatables.
